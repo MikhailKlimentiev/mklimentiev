@@ -32,8 +32,8 @@ public class PointTest {
 	public void whenPassParametresToThePointThenFieldsOfTheClassPointInitialize() {
 		Point point1 = new Point();
 		Point point2 = new Point();
-		point1.point(0, 1);
-		point2.point(1, 2);
+		point1.point(0.0d, 1.0d);
+		point2.point(1.0d, 2.0d);
 		double result = distanceTo(point1, point2);
 		assertThat(result, is(closeTo(1.4142135623731d, 0.01)))
 	}

@@ -22,27 +22,27 @@ public class TriangleTest {
 		Point point2 = new Point();
 		Point point3 = new Point();
 
-		point1.point(0.0, 1.0);
-		point2.point(1.0, 2.0);
-		point3.point(2.0, 1.0);
+		point1.point(0.0d, 1.0d);
+		point2.point(1.0d, 2.0d);
+		point3.point(2.0d, 1.0d);
 
 		Triangle triangle = new Triangle();
 		triangle.triangle(point1, point2, point3);
 
 		double result = triangle.a.x;
-		assertThat(result, closeTo(0.0, 0.00));
+		assertThat(result, closeTo(0.0d, 0.00));
 		result = triangle.a.y;
-		assertThat(result, closeTo(1.0, 0.00));
+		assertThat(result, closeTo(1.0d, 0.00));
 
 		result = triangle.b.x;
-		assertThat(result, closeTo(1.0, 0.00));
+		assertThat(result, closeTo(1.0d, 0.00));
 		result = triangle.b.y;
-		assertThat(result, closeTo(2.0, 0.00));
+		assertThat(result, closeTo(2.0d, 0.00));
 
 		result = triangle.c.x;
-		assertThat(result, closeTo(2.0, 0.00));
+		assertThat(result, closeTo(2.0d, 0.00));
 		result = triangle.c.y;
-		assertThat(result, closeTo(1.0, 0.00));
+		assertThat(result, closeTo(1.0d, 0.00));
 	}
 
 	/**
