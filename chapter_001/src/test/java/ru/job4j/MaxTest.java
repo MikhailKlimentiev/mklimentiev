@@ -21,4 +21,14 @@ public class MaxTest {
 		int result = max.max(2, 1);
 		assertThat(result, is(2));
 	}
+
+	/**
+	 * Test maxFromThree.
+	 */
+	@Test
+	public void whenPassTreeParametresThenReturnMaxFromThem() {
+		Max max = new Max();
+		int result = max.max(2, 1, 0);
+		assertThat(result, is(2));
+	}
 }
