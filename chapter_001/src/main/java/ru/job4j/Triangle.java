@@ -29,7 +29,7 @@ public class Triangle {
 	 * @param b -- Second point of the triangle
 	 * @param c -- Third point of the triangle
 	 */
-	public triangle(Point a, Point b, Point c) {
+	public void triangle(Point a, Point b, Point c) {
 		this.a = a;
 		this.b = b;
 		this.c = c;
@@ -42,14 +42,13 @@ public class Triangle {
 	 * @param a -- First point of the triangle
 	 * @param b -- Second point of the triangle
 	 * @param c -- Third point of the triangle
-	 * @return area
+	 * @return -- area of the triangle calculated on coordinates of three points
 	 */
 	public double area(Point a, Point b, Point c) {
 		if (distanceTo(a, b) != 0) {
 			if (distanceTo(a, c) != 0) {
 				if (distanceTo(b, c) != 0) {
-					double area = abs((b.x - a.x) * (c.y - a.y) - (c.x - a.x) * (b.y - a.y)) / 2;
-					return area;
+					return abs((b.x - a.x) * (c.y - a.y) - (c.x - a.x) * (b.y - a.y)) / 2;
 				}
 			}
 		}

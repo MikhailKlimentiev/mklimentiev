@@ -50,7 +50,8 @@ package ru.job4j;
 	}
 
 	/**
-	 * Метод для получения поля result.
+	 * getResult.
+	 *
 	 * @return result
 	 */
 	double getResult() {

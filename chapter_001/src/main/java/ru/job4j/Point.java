@@ -24,7 +24,7 @@ public class Point {
 	 * @param x -- coordinate x of the Point
 	 * @param y -- coordinate y of the Point
 	 */
-	public point(double x, double y) {
+	public void point(double x, double y) {
 		this.x = x;
 		this.y = y;
 	}
@@ -34,10 +34,9 @@ public class Point {
 	 *
 	 * @param point1 -- parameter point #1
 	 * @param point2 -- parameter point #1
-	 * @return distance -- value double
+	 * @return distance between two points, double value
 	 */
 	public double distanceTo(Point point1, Point point2) {
-		double distance = sqrt(pow((point2.x - point1.x), 2) + pow((point2.y - point1.y), 2));
-		return distance;
+		return sqrt(pow((point2.x - point1.x), 2) + pow((point2.y - point1.y), 2));
 	}
 }
