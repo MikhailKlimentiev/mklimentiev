@@ -7,8 +7,8 @@ import static org.hamcrest.core.Is.is;
 /**
  * MaxTest.
  * @author mklimentiev
- * version 2.0
- * since 01.04.2017
+ * @version 2.0
+ * @since 01.04.2017
 */
 public class MaxTest {
 
