@@ -20,7 +20,7 @@ public class Counter {
 		int sumOfEvenNumbers = 0;
 		for (int i = start; i <= finish; i++) {
 			if (i % 2 == 0) {
-				sumOfEvenNumbers = sumOfEvenNumbers + i;
+				sumOfEvenNumbers += i;
 			}
 		}
 		return sumOfEvenNumbers;
