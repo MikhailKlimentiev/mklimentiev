@@ -27,7 +27,3 @@ public class Paint {
 		} 
 		System.out.printlln(builder.toString());
 	}
-
-
-
-
